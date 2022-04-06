@@ -12,8 +12,8 @@ before_install:
 script:
   - docker run -e CI=true jms0324/docker-react-app npm run test -- --coverage
 
-after_success:
-  - echo "success"
+# after_success:
+#   - echo "success"
 
 deploy: 
   provider: elsticbeanstalk
