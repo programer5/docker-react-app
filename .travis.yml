@@ -16,7 +16,7 @@ script:
 #   - echo "success"
 
 deploy: 
-  provider: elsticbeanstalk
+  provider: elasticbeanstalk
   region: "ap-northeast-2"
   app: "react-app"
   env: "Reactapp-env"
@@ -26,4 +26,5 @@ deploy:
     branch: master
 
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
