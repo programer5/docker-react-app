@@ -7,7 +7,7 @@ services:
 
 before_install:
   - echo "image create"
-  - docker build -t jms0324/docker-react-app -f Dockerfile.dev .
+  - docker build -t jms0324/docker-react-app -f Dockerfile .
 
 script:
   - docker run -e CI=true jms0324/docker-react-app npm run test -- --coverage
