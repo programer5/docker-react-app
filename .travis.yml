@@ -24,5 +24,6 @@ deploy:
   bucket-paht: "react-app"
   on:
     branch: master
-access_key_id: aws-access-key
-secret_access_key: aws-secretkey
+
+  access_key_id: aws-access-key
+  secret_access_key: aws-secretkey
