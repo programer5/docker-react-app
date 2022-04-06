@@ -17,11 +17,11 @@ script:
 
 deploy: 
   provider: elsticbeanstalk
-  region: ap-northeast-2
+  region: "ap-northeast-2"
   app: "react-app"
   env: "Reactapp-env"
-  bucket-name: "elasticbeanstalk-ap-northeast-2-250058502806"
-  bucket-paht: "react-app"
+  bucket_name: "elasticbeanstalk-ap-northeast-2-250058502806"
+  bucket_paht: "react-app"
   on:
     branch: master
 
